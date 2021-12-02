@@ -1,14 +1,39 @@
 @charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
 header {
     background-color: black;
+    color: white;
     height: 200px;
 }
 
-h1 { 
+header > h1 { 
+    padding-top: 50px;
     color: white;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
     font-size: 40px;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bloder;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 h2 {
@@ -16,14 +41,27 @@ h2 {
     text-align: center;
 }
 
-a {
-    text-decoration: none;
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    color: #0c0808;
     color: white;
 }
 
-a:hover {
-    text-decoration: underline;
+section.imagem > p {
+    width: 400px;
+    background-color: #0000003b;
 }
+
 p {
     font-family: cursive;
     font-size: 30px;
@@ -31,11 +69,7 @@ p {
 
 footer {
     background-color: black;
-}
-
-#fundo {
-    background-image: url(img/background001.jpg);
-    background-repeat: repeat;
-    background-size: 100%;
-    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    padding: 10px;
 }
